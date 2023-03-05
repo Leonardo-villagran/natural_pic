@@ -48,7 +48,7 @@ export default function App() {
   return (
     <div className="App">
       <Context.Provider value={ globalState }>
-      <BrowserRouter>
+      <BrowserRouter basename='/natural_pic'>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
