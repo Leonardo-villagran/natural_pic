@@ -12,4 +12,4 @@ No en la raíz. Esto se realizó para facilitar el deploy dentro de Github Pages
 
 Acceso web desde (Github Pages):
 
-[https://leonardo-villagran.github.io/natural_pic](https://leonardo-villagran.github.io/natural_pic)n
+[https://leonardo-villagran.github.io/natural_pic](https://leonardo-villagran.github.io/natural_pic)
