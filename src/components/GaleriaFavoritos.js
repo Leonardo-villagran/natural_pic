@@ -1,5 +1,7 @@
+//Importación de Context para el uso global de estados.
 import React, { useContext } from 'react';
 import Context from "../Context/Context"
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,13 +10,15 @@ import "../assets/css/galeria.css";
 
 export default function Home() {
 
+    //Desestructuración global de datos.
     const {nuevaMatriz} = useContext(Context);
 
+    //Impresión de galería de imágenes favoritas, las cuales corresponden a los registros con cantidad distinto de cero. 
     const imprimirFavoritos = () => {
 
         const arreglo = nuevaMatriz.map((producto) => (
             producto.cantidad !== 0 ?
-                < Col key={producto.id} >
+                < Col md="auto" key={producto.id} >
                     <div className='caja'>
                         <img className='imagen' src={producto.tiny} alt="foto" />
 
@@ -29,7 +33,7 @@ export default function Home() {
     return (
         <div>
             <Container fluid >
-                <Row >
+                <Row className="justify-content-md-center">
                     {imprimirFavoritos()}
                 </Row>
             </Container>
