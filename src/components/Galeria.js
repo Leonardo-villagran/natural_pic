@@ -31,9 +31,9 @@ export default function Home() {
   const imprimir = () => {
     const arreglo=
       nuevaMatriz.map((producto) => (
-        <Col sm="auto" key={producto.id}>
+        <Col className='col-sm-auto text-center' key={producto.id}>
           <div className='caja'>
-            <img className='imagen' onClick={() => presionarboton(producto.id, producto.cantidad)} src={producto.tiny} alt="foto" />
+            <img className='img' onClick={() => presionarboton(producto.id, producto.cantidad)} src={producto.tiny} alt="foto" />
             <div className='heart px-2'><img onClick={() => presionarboton(producto.id, producto.cantidad)} 
             src={producto.cantidad === 0 ? blanco: rojo} alt="foto"/>{ producto.cantidad}</div>
             <div className='texto_blanco px-2'>{producto.alt}</div>
@@ -42,13 +42,10 @@ export default function Home() {
       ));
     return arreglo;
   }
-
-
-
   return (
     <div>
       <Container fluid>
-        <Row className="justify-content-sm-center" >
+        <Row className="justify-content-md-center" >
           {imprimir()}
         </Row>
       </Container>
