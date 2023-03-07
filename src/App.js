@@ -22,8 +22,8 @@ export default function App() {
   //Consumo de Json para almacenar datos en productos
   const fetchData = async () => {
     const response = await fetch('./fotos.json');
-    const data = await response.json();
-    setProductos(data['photos']);
+    const {photos} = await response.json();
+    setProductos(photos);
   };
   
   //Llamado para consumir el Json
@@ -34,14 +34,14 @@ export default function App() {
   //Generación de nueva Matriz con datos del Json y otros datos:
     //id: id para identificar cada foto.
     //tiny: Dirección de la foto en formato tiny.
-    //cantidad: Una cantidad para determinar cuantas veces se a presionado el botón del like.
+    //estado: Para determinar el estado del botón like y determinar si se debe ver en favoritos.
     //Alt: Texto con detalles de cada foto.
 
   useEffect(() => {
     const nueva = productos.map((producto, index) => ({
       id: index,
       tiny: producto.src.tiny,
-      cantidad: 0,
+      estado: 0,
       alt: producto.alt
     }));
     setNuevaMatriz(nueva);
