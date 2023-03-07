@@ -24,7 +24,6 @@ export default function Home() {
     );
     setNuevaMatriz(nuevosDatos);
     console.log('Botón Presionado con id: ', id,'cantidad: ', (1+cant));
-    console.log(nuevaMatriz)
   }
 
   //Impresión de galería de imágenes a través de matriz de datos con sus respectivos datos asociados.

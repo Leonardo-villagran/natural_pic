@@ -25,7 +25,7 @@ export default function App() {
     const data = await response.json();
     setProductos(data['photos']);
   };
-
+  
   //Llamado para consumir el Json
   useEffect(() => {
     fetchData();
@@ -47,14 +47,13 @@ export default function App() {
     setNuevaMatriz(nueva);
   }, [productos]);
 
-  //console.log(nuevaMatriz)
-
+  
   //Selección de constantes a ser enviadas a través de los componentes. 
   const globalState = { nuevaMatriz, setNuevaMatriz };
 
   // Para el deploy 
   //<BrowserRouter basename='/natural_pic'>
-
+  console.log(nuevaMatriz)
   return (
     <div className="App">
       <Context.Provider value={ globalState }>
