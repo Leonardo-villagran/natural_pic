@@ -30,3 +30,9 @@ http://localhost:3000
 ## Acceso web desde (Github Pages):
 
 [https://leonardo-villagran.github.io/natural_pic](https://leonardo-villagran.github.io/natural_pic)
+
+## Imágenes de las distintas vistas:
+
+![https://github.com/Leonardo-villagran/natural_pic/blob/main/src/assets/img/ejemplo_01.jpg](https://github.com/Leonardo-villagran/natural_pic/blob/main/src/assets/img/ejemplo_01.jpg)
+
+![https://github.com/Leonardo-villagran/natural_pic/blob/main/src/assets/img/ejemplo_01.jpg](https://github.com/Leonardo-villagran/natural_pic/blob/main/src/assets/img/ejemplo_02.jpg)
